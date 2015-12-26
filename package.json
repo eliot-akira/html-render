@@ -1,0 +1,30 @@
+{
+  "name": "html-render",
+  "version": "0.1.0",
+  "description": "HTMLElement render method with incremental DOM update",
+  "main": "index.js",
+  "scripts": {
+    "start": "mkdir -p dist && npm run build",
+    "build": "browserify src/index.js | derequire | uglifyjs -cm > dist/html-render.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eliot-akira/html-render.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/eliot-akira/html-render/issues"
+  },
+  "homepage": "https://github.com/eliot-akira/html-render#readme",
+  "dependencies": {
+    "html-parse-stringify": "^1.0.2",
+    "incremental-dom": "^0.3.0"
+  },
+  "devDependencies": {
+    "browserify": "^12.0.1",
+    "derequire": "^2.0.3",
+    "uglify-js": "^2.6.1"
+  }
+}
