@@ -14,7 +14,7 @@ var renderHTML = function( el, html ) {
 
     iDOM.patch( el, function() {
 
-	    var ast = parse( html );
+      var ast = parse( html );
 
       if ( ast[0] == null || ! Array.isArray(ast[0].children) ) return;
       // Unwrap from root element
