@@ -7,7 +7,7 @@ var renderHTML = function( el, html ) {
   if ( typeof html === 'undefined' ) return;
 
   // Wrap in single root element
-  // Support HTML with zero, single or multiple nodes
+  // Support HTML with single or multiple nodes
   html = '<div>' + html + '</div>';
 
   try {
